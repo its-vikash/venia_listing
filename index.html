@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Venia Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
+                <div class="logo">
+                    <h1>VENIA</h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="#"><img src="assets/images/shopping-bag.png" alt="Cart"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="container">
+            <div class="top-search-sort">
+                <input type="text" id="search-bar" aria-label="Search for products" placeholder="Search products...">
+                <select id="sort-options" aria-label="Sort by Price">
+                    <option value="" hidden>Sort by Price</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <h3>Filters</h3>
+                    <section id="filters">
+                        <div class="title">Categories</div>
+                        <div id="category-checkboxes">
+                            <!-- Checkboxes will be dynamically inserted here -->
+                        </div>
+                        <!-- Price Filter -->
+                        <div class="title">Price</div>
+                        <div class="filter-section">
+                            <input type="number" id="min-price" placeholder="0">
+                            <spa>to</spa>
+                            <input type="number" id="max-price" placeholder="1000">
+                        </div>
+        
+                        <!-- Availability Filter -->
+                        <div class="available-filter">
+                            <input type="checkbox" id="availability">
+                            <label for="availability">Availability</label>
+                        </div>
+                    </section>
+                </div>
+                <section id="product-list" aria-live="polite">
+                    <div class="shimmer card">
+                        <div class="product-image shimmer-animation"></div>
+                        <div class="loader-shimmer-content">
+                        <div class="loader-shimmer-header">
+                            <div class="loader-shimmer-title shimmer-animation"></div>
+                        </div>
+                        <div class="loader-shimmer-description shimmer-animation"></div>
+                        <div class="loader-shimmer-price shimmer-animation"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer card">
+                        <div class="product-image shimmer-animation"></div>
+                        <div class="loader-shimmer-content">
+                        <div class="loader-shimmer-header">
+                            <div class="loader-shimmer-title shimmer-animation"></div>
+                        </div>
+                        <div class="loader-shimmer-description shimmer-animation"></div>
+                        <div class="loader-shimmer-price shimmer-animation"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer card">
+                        <div class="product-image shimmer-animation"></div>
+                        <div class="loader-shimmer-content">
+                        <div class="loader-shimmer-header">
+                            <div class="loader-shimmer-title shimmer-animation"></div>
+                        </div>
+                        <div class="loader-shimmer-description shimmer-animation"></div>
+                        <div class="loader-shimmer-price shimmer-animation"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer card">
+                        <div class="product-image shimmer-animation"></div>
+                        <div class="loader-shimmer-content">
+                        <div class="loader-shimmer-header">
+                            <div class="loader-shimmer-title shimmer-animation"></div>
+                        </div>
+                        <div class="loader-shimmer-description shimmer-animation"></div>
+                        <div class="loader-shimmer-price shimmer-animation"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer card">
+                        <div class="product-image shimmer-animation"></div>
+                        <div class="loader-shimmer-content">
+                        <div class="loader-shimmer-header">
+                            <div class="loader-shimmer-title shimmer-animation"></div>
+                        </div>
+                        <div class="loader-shimmer-description shimmer-animation"></div>
+                        <div class="loader-shimmer-price shimmer-animation"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer card">
+                        <div class="product-image shimmer-animation"></div>
+                        <div class="loader-shimmer-content">
+                        <div class="loader-shimmer-header">
+                            <div class="loader-shimmer-title shimmer-animation"></div>
+                        </div>
+                        <div class="loader-shimmer-description shimmer-animation"></div>
+                        <div class="loader-shimmer-price shimmer-animation"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>        
+        <div class="load-more-btn"><button id="load-more" aria-label="Load more products" hidden>Load More</button></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-top container">
+            <div class="footer-column">
+                <h3>Accounts</h3>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Stories</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Helps</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us!</h3>
+                <p>Stay connected through social media and follow us for the latest updates.</p>
+                <ul class="social-links">
+                    <li><a href="#"><img src="assets/images/instagram.png" alt="Cart"></a></li>
+                    <li><a href="#"><img src="assets/images/facebook.png" alt="Cart"></a></li>
+                    <li><a href="#"><img src="assets/images/twitter.png" alt="Cart"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-logo">
+                    <h2>VENIA</h2>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; Company Name Address Ave, City Name, State ZIP</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>            
+        </div>
+    </footer>
+
+    <!-- Error/No Results Modal -->
+    <div id="error-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <div id="preloader" class="hidden">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
